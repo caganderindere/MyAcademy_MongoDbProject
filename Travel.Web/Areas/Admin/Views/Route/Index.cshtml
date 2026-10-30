@@ -1,0 +1,51 @@
+﻿
+@model List<ResultRouteDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Rotalar</h1>
+
+<form method="post">
+    <input type="text" name="city" placeholder="Şehir İsmini Buraya Yazın..." />
+    <button type="submit" class="btn btn-dark">Ara</button>
+</form>
+
+<table class="table table-bordered table-hover">
+    @{
+        int count = 0;
+    }
+    <tr>
+        <th>#</th>
+        <th>Görsel</th>
+        <th>Ülke</th>
+        <th>Şehir</th>
+        <th>Tur Süresi</th>
+        <th>Fiyat</th>
+        <th>İşlemler</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        count++;
+
+        <tr>
+            <th>@count</th>
+            <td><img src="@item.ImageUrl" style="height:75px;width:75px" alt="@item.City" />  </td>
+            <td>@item.Country</td>
+            <td>@item.City</td>
+            <td>@item.Duration</td>
+            <td>@item.Price ₺</td>
+         
+            <td>
+                <a href="/Admin/Route/Delete/@item.Id" onclick="return confirm('Silmek istediğinize emin misiniz?')" class="btn btn-outline-danger">Sil</a>
+                <a href="/Admin/Route/Update/@item.Id" class="btn btn-outline-info">Güncelle</a>
+            </td>
+        </tr>
+    }
+
+
+</table>
+
+<a href="/Admin/Route/Create" class="btn btn-outline-dark">Yeni Rota Ekle</a>
