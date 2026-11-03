@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Home" xml:space="preserve"><value>Ana Sayfa</value></data>
+  <data name="Tours" xml:space="preserve"><value>Turlar</value></data>
+  <data name="Destinations" xml:space="preserve"><value>Destinasyonlar</value></data>
+  <data name="Login" xml:space="preserve"><value>Giriş Yap</value></data>
+  <data name="Register" xml:space="preserve"><value>Kayıt Ol</value></data>
+  <data name="Logout" xml:space="preserve"><value>Çıkış Yap</value></data>
+  <data name="Profile" xml:space="preserve"><value>Profilim</value></data>
+  <data name="AdminPanel" xml:space="preserve"><value>Yönetim Paneli</value></data>
+  <data name="Language" xml:space="preserve"><value>Dil</value></data>
+  <data name="Search" xml:space="preserve"><value>Ara</value></data>
+  <data name="Save" xml:space="preserve"><value>Kaydet</value></data>
+  <data name="Cancel" xml:space="preserve"><value>İptal</value></data>
+  <data name="Delete" xml:space="preserve"><value>Sil</value></data>
+  <data name="Update" xml:space="preserve"><value>Güncelle</value></data>
+  <data name="Create" xml:space="preserve"><value>Yeni Ekle</value></data>
+  <data name="Actions" xml:space="preserve"><value>İşlemler</value></data>
+  <data name="DeleteConfirm" xml:space="preserve"><value>Silmek istediğinize emin misiniz?</value></data>
+</root>

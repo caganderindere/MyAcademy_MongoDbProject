@@ -1,0 +1,11 @@
+@using System.Globalization
+@{
+    var isEnglish = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "en";
+    var returnUrl = Context.Request.Path + Context.Request.QueryString;
+}
+
+@* Site Türkçe ise EN butonu, İngilizce ise TR butonu gösterilir *@
+<a class="btn btn-sm btn-outline-secondary" asp-area="" asp-controller="Language" asp-action="Change"
+   asp-route-culture="@(isEnglish ? "tr-TR" : "en-US")" asp-route-returnUrl="@returnUrl">
+    @(isEnglish ? "TR" : "EN")
+</a>
